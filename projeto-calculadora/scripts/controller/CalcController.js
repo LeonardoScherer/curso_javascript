@@ -57,7 +57,7 @@ class CalcController {
     }
 
     set displayTime(value) {
-        return this._timeEl.innerHTML = value;
+        this._timeEl.innerHTML = value;
     }
 
     get displayDate() {
@@ -65,7 +65,7 @@ class CalcController {
     }
 
     set displayDate(value) {
-        return this._dateEl.innerHTML = value;
+        this._dateEl.innerHTML = value;
     }
 
     get displayCalc() {
