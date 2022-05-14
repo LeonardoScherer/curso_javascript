@@ -41,7 +41,6 @@ class CalcController {
 
             this.displayCalc = parseFloat(text);
 
-            console.log(text);
         })
 
     }
@@ -271,7 +270,6 @@ class CalcController {
 
         }
 
-        console.log(this._operation)
     }
 
     setError() {
@@ -296,7 +294,7 @@ class CalcController {
 
     execBtn(value) {
         this.playAudio();
-        console.log(value);
+        
         switch (value) {
             case 'ac':
                 this.clearAll();
