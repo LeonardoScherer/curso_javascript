@@ -11,6 +11,15 @@ var fields = document.querySelectorAll('#form-user-create [name]');
 
 fields.forEach(function(field, index) {
 
-    console.log(index);
+    if (field.name == "gender") {
+        if (field.checked){
+            console.log('sim', field);
+        }
+        
+    } else {
+        console.log('nao');
+    }
+
+    //console.log(index);
 
 });
