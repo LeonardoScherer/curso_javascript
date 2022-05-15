@@ -1,25 +1,19 @@
-var name = document.querySelector('#exampleInputName');
-var gender = document.querySelector('#form-user-create [name=gender]:checked');
-var birth = document.querySelector('#exampleInputBirth');
-var contry = document.querySelector('#exampleInputContry');
-var email = document.querySelector('#exampleInputEmail');
-var password = document.querySelector('#exampleInputPassword');
-var photo = document.querySelector('#exampleInputPhoto');
-var admin = document.querySelector('#exampleInputAdmin');
-
 var fields = document.querySelectorAll('#form-user-create [name]');
+var user = {};
 
 fields.forEach(function(field, index) {
 
     if (field.name == "gender") {
         if (field.checked){
-            console.log('sim', field);
+            user[field.name] = field.value
         }
         
     } else {
-        console.log('nao');
+        
+        user[field.name] = field.value
+
     }
 
-    //console.log(index);
-
+    
 });
+console.log(user);
